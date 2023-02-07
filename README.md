@@ -17,7 +17,10 @@ npm test
 You can target any network from your Hardhat config using:
 
 ```
+npx hardhat compile
 npx hardhat run --network localhost scripts/deploy.ts
+// or
+npx hardhat deploy
 ```
 
 ## Run local node
