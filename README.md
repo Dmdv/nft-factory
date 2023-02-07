@@ -28,3 +28,9 @@ npx hardhat deploy
 ```
 npx hardhat node
 ```
+
+## Deployed in Goerli
+
+```
+https://goerli.etherscan.io/address/0xfeDB19A138fdF3432A88eB3dB9AD36f7aed073B0
+```
