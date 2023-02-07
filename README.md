@@ -23,6 +23,11 @@ npx hardhat run --network localhost scripts/deploy.ts
 npx hardhat deploy
 ```
 
+## Verifying the contract
+```
+ npx hardhat verify 0xfeDB19A138fdF3432A88eB3dB9AD36f7aed073B0 --network goerli
+```
+
 ## Run local node
 
 ```
