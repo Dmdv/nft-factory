@@ -13,7 +13,13 @@ contract FarawayNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("FarawayNFT", "FTK") {}
+    // EVENTS
+    event CollectionCreated(address collection, string name, string symbol);
+    event TokenMinted(address collection, address recipient, uint256 tokenId, string tokenUri);
+
+    constructor() ERC721("FarawayNFT", "FTK") {
+        emit CollectionCreated(address(this), "FarawayNFT", "FTK");
+    }
 
     // MINTING FUNCTIONS
     function safeMint(address to, string memory uri)
@@ -25,6 +31,8 @@ contract FarawayNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
+
+        emit TokenMinted(address(this), to, tokenId, uri);
     }
 
     // PAUSABLE
