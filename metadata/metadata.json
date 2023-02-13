@@ -1,0 +1,19 @@
+{
+  "name": "Flowers",
+  "description": "Flower is an abstract art form, usually created by arranging flowers",
+  "image": "https://ipfs.io/ipfs/QmdY2qNdSrp1wK666HgGUzhetkn6WKEPysQMUg3CqREn71",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Color",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Form",
+      "value": "Abstract"
+    }
+  ]
+}

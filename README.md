@@ -39,3 +39,8 @@ npx hardhat node
 ```
 https://goerli.etherscan.io/address/0xfeDB19A138fdF3432A88eB3dB9AD36f7aed073B0
 ```
+
+## Metadata 
+
+Metadata json: 
+`Qmb445HcZCKeueTduWKq2yt7UEcsRaHnUjLJzsff7PFFMX`
