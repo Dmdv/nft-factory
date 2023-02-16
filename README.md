@@ -48,18 +48,12 @@ Metadata json:
 
 ## Factory address
 ```
-0x8e5f7274D0Ee5CF922B64F6e5E707FF3001EC709
+0xFE20Ce9fBe514397427d20C91CB657a4478A0FFa
 ```
 ```
-https://goerli.etherscan.io/address/0x8e5f7274D0Ee5CF922B64F6e5E707FF3001EC709
+https://goerli.etherscan.io/address/0xFE20Ce9fBe514397427d20C91CB657a4478A0FFa
 ```
 
 ```shell
-npx hardhat verify 0x8e5f7274D0Ee5CF922B64F6e5E707FF3001EC709 --network goerli
-```
-
-### Test child Collection
-
-```
-0x0bA7C9bbED492817D8823352cA3CD1AC4f652717
+npx hardhat verify 0xFE20Ce9fBe514397427d20C91CB657a4478A0FFa --network goerli
 ```

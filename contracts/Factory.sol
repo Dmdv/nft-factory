@@ -34,6 +34,33 @@ contract Factory is IFactory, Ownable {
         return addr;
     }
 
+    // MINTING FUNCTIONS
+    function mint(address token, address to, string calldata uri) external onlyOwner {
+        require(tokenMapping[token], "Factory: token not found");
+        FarawayNFT(token).safeMint(to, uri);
+    }
+
+    // TOKEN INFO FUNCTIONS
+    function tokenName(address address_) public view returns (string memory) {
+        require(tokenMapping[address_], "Factory: token not found");
+        return FarawayNFT(address_).name();
+    }
+
+    function tokenSymbol(address address_) public view returns (string memory) {
+        require(tokenMapping[address_], "Factory: token not found");
+        return FarawayNFT(address_).symbol();
+    }
+
+    function tokenUri(address address_, uint256 tokenId_) public view returns (string memory) {
+        require(tokenMapping[address_], "Factory: token not found");
+        return FarawayNFT(address_).tokenURI(tokenId_);
+    }
+
+    function tokenTotalSupply(address address_) public view returns (uint256) {
+        require(tokenMapping[address_], "Factory: token not found");
+        return FarawayNFT(address_).totalSupply();
+    }
+
     /**
      * @return total number of tokens created by the factory
      */
