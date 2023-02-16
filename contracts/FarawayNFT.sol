@@ -17,8 +17,8 @@ contract FarawayNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Pausable, Own
     event CollectionCreated(address collection, string name, string symbol);
     event TokenMinted(address collection, address recipient, uint256 tokenId, string tokenUri);
 
-    constructor() ERC721("FarawayNFT", "FTK") {
-        emit CollectionCreated(address(this), "FarawayNFT", "FTK");
+    constructor(string memory name, string memory symbol) ERC721(name, symbol) {
+        emit CollectionCreated(address(this), name, symbol);
     }
 
     // MINTING FUNCTIONS

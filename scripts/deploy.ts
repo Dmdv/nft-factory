@@ -1,12 +1,12 @@
 import { ethers } from "hardhat";
 
 async function main() {
-    const FarawayNFT = await ethers.getContractFactory("FarawayNFT");
+    const Factory = await ethers.getContractFactory("Factory");
 
-    const nft = await FarawayNFT.deploy();
-    await nft.deployed();
+    const factory = await Factory.deploy();
+    await factory.deployed();
 
-    console.log(`Deployed FarawayNFT to ${nft.address}`);
+    console.log(`Deployed Factory to ${factory.address}`);
 }
 
 main().catch((error) => {
